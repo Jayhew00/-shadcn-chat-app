@@ -10,6 +10,7 @@ import { Mail, MapPin, MessageCircle, GraduationCap, Award, Briefcase, Calendar,
 
 export default function Portfolio() {
   const [activeTab, setActiveTab] = useState("about")
+  const [expandedJobs, setExpandedJobs] = useState<Record<number, boolean>>({})
   const [showContacts, setShowContacts] = useState(false)
   const [portfolioFilter, setPortfolioFilter] = useState("All")
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -616,7 +617,17 @@ export default function Portfolio() {
                                     )}
                                   </div>
                                 </div>
-                                <p className="text-gray-300 text-sm leading-relaxed mt-3">{job.description}</p>
+                                <div className="mt-3">
+                                  <p className={`text-gray-300 text-sm leading-relaxed ${!expandedJobs[index] ? 'line-clamp-3' : ''}`}>
+                                    {job.description}
+                                  </p>
+                                  <button 
+                                    onClick={() => setExpandedJobs(prev => ({...prev, [index]: !prev[index]}))}
+                                    className="text-yellow-500 text-sm mt-1 hover:underline focus:outline-none"
+                                  >
+                                    {expandedJobs[index] ? 'Show less' : 'Read more'}
+                                  </button>
+                                </div>
                               </div>
                             </div>
                           </CardContent>
@@ -697,7 +708,7 @@ export default function Portfolio() {
                     <h4 className="text-xl font-semibold text-white mb-6">Contact Information</h4>
 
                     <div className="max-w-2xl space-y-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         <a href="mailto:hewmannxuan@gmail.com">
                           <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors cursor-pointer">
                             <CardContent className="p-6">
