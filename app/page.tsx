@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -222,11 +223,14 @@ export default function Portfolio() {
             >
               <X className="w-8 h-8" />
             </button>
-            <img
+            <Image
               src={selectedImage || "/placeholder.svg"}
               alt="Portfolio Preview"
+              width={800}
+              height={600}
               className="w-full h-full object-contain rounded-lg"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e: React.MouseEvent) => e.stopPropagation()}
+              unoptimized={!selectedImage}
             />
           </div>
         </div>
@@ -429,7 +433,7 @@ export default function Portfolio() {
 
                       <div className="space-y-6 text-gray-300 leading-relaxed text-base">
                         <p>
-                          I'm a passionate graphic designer with expertise in digital design, branding, and web
+                          I&apos;m a passionate graphic designer with expertise in digital design, branding, and web
                           development. With a strong foundation in design principles and technical skills, I create
                           visually compelling solutions that communicate effectively.
                         </p>
@@ -440,7 +444,7 @@ export default function Portfolio() {
                         </p>
 
                         <p>
-                          I'm constantly exploring new design trends and technologies to expand my creative toolkit and
+                          I&apos;m constantly exploring new design trends and technologies to expand my creative toolkit and
                           bring fresh perspectives to every project.
                         </p>
                       </div>
@@ -656,10 +660,13 @@ export default function Portfolio() {
                         >
                           <CardContent className="p-0">
                             <div className="relative overflow-hidden">
-                              <img
+                              <Image
                                 src={project.image || "/placeholder.svg"}
                                 alt={project.title}
+                                width={400}
+                                height={192}
                                 className="w-full h-48 object-cover"
+                                unoptimized={!project.image}
                               />
                               <button
                                 onClick={() => setSelectedImage(project.image)}
@@ -686,7 +693,7 @@ export default function Portfolio() {
                       <div className="w-12 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 mt-3"></div>
                     </h2>
 
-                    <h3 className="text-2xl font-bold text-white mb-6">Let's Start a Conversation</h3>
+                    <h3 className="text-2xl font-bold text-white mb-6">Let&apos;s Start a Conversation</h3>
                     <h4 className="text-xl font-semibold text-white mb-6">Contact Information</h4>
 
                     <div className="max-w-2xl space-y-6">
@@ -725,7 +732,7 @@ export default function Portfolio() {
                       </div>
 
                       <p className="text-gray-300 text-base leading-relaxed">
-                        Feel free to reach out for collaborations, project inquiries, or just to say hello. I'm always
+                        Feel free to reach out for collaborations, project inquiries, or just to say hello. I&apos;m always
                         open to discussing new projects and creative ideas.
                       </p>
                     </div>
@@ -826,14 +833,14 @@ export default function Portfolio() {
                         <Card className="bg-gray-700/30 border-gray-600">
                           <CardContent className="p-6">
                             <p className="text-gray-300 leading-relaxed">
-                              This journey represents more than just career advancement—it's about personal
+                              This journey represents more than just career advancement—it&apos;s about personal
                               transformation and embracing new challenges. While overcoming camera shyness may seem
                               daunting, I believe that authentic content creation, combined with my technical skills and
-                              creative background, can open doors to opportunities I haven't yet imagined.
+                              creative background, can open doors to opportunities I haven&apos;t yet imagined.
                             </p>
 
                             <p className="text-gray-300 leading-relaxed mt-4">
-                              The goal isn't just to become visible online, but to create meaningful content that adds
+                              The goal isn&apos;t just to become visible online, but to create meaningful content that adds
                               value to the creative community while building the financial foundation needed to pursue
                               advanced learning opportunities and cutting-edge tools in design and development.
                             </p>
@@ -990,7 +997,7 @@ export default function Portfolio() {
                   <div className="w-12 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 mb-4"></div>
                   <div className="space-y-4 text-gray-300 text-sm leading-relaxed">
                     <p>
-                      I'm a passionate graphic designer with expertise in digital design, branding, and web development.
+                      I&apos;m a passionate graphic designer with expertise in digital design, branding, and web development.
                       With a strong foundation in design principles and technical skills, I create visually compelling
                       solutions that communicate effectively.
                     </p>
@@ -1119,10 +1126,13 @@ export default function Portfolio() {
                     <Card key={project.id} className="bg-gray-700/30 border-gray-600 overflow-hidden">
                       <CardContent className="p-0">
                         <div className="relative">
-                          <img
+                          <Image
                             src={project.image || "/placeholder.svg"}
                             alt={project.title}
+                            width={400}
+                            height={128}
                             className="w-full h-32 object-cover"
+                            unoptimized={!project.image}
                           />
                           <button
                             onClick={() => setSelectedImage(project.image)}
@@ -1180,7 +1190,7 @@ export default function Portfolio() {
                 </div>
 
                 <p className="text-gray-300 text-sm leading-relaxed mt-6">
-                  Feel free to reach out for collaborations, project inquiries, or just to say hello. I'm always open to
+                  Feel free to reach out for collaborations, project inquiries, or just to say hello. I&apos;m always open to
                   discussing new projects and creative ideas.
                 </p>
               </div>
