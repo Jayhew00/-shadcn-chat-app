@@ -478,6 +478,7 @@ export default function Portfolio() {
                       { key: "resume", label: "Resume" },
                       { key: "experience", label: "Working Experience" },
                       { key: "portfolio", label: "Portfolio" },
+                      { key: "pricing", label: "Pricing" },
                       { key: "contact", label: "Contact" },
                       { key: "goals", label: "Goals" },
                     ].map((tab) => (
@@ -833,6 +834,270 @@ export default function Portfolio() {
                           </CardContent>
                         </Card>
                       ))}
+                    </div>
+                  </div>
+                )}
+
+                {activeTab === "pricing" && (
+                  <div>
+                    <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
+                      Pricing & Services
+                      <div className="w-12 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 mt-3"></div>
+                    </h2>
+
+                    <p className="text-gray-300 text-lg mb-8">
+                      Affordable design and development services tailored for Malaysian businesses
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {/* Printing Design */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Printing Design</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 150</div>
+                            <p className="text-gray-400 text-sm">per design</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Business cards</li>
+                            <li>• Brochures & flyers</li>
+                            <li>• Menu designs</li>
+                            <li>• Banners & posters</li>
+                            <li>• 2 revisions included</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Packaging Design */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 9l3-3 3 3" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Packaging Design</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 300</div>
+                            <p className="text-gray-400 text-sm">per package</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Product packaging</li>
+                            <li>• Label design</li>
+                            <li>• Box design</li>
+                            <li>• 3D mockups</li>
+                            <li>• 3 revisions included</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Social Media Ads */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v18a1 1 0 01-1 1H4a1 1 0 01-1-1V1a1 1 0 011-1h2a1 1 0 011 1v3" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Social Media Ads</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 80</div>
+                            <p className="text-gray-400 text-sm">per design</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Facebook/Instagram ads</li>
+                            <li>• Story designs</li>
+                            <li>• Carousel ads</li>
+                            <li>• Multiple sizes</li>
+                            <li>• 1 revision included</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Website Design */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Website Design</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 1,500</div>
+                            <p className="text-gray-400 text-sm">complete website</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Responsive design</li>
+                            <li>• Up to 5 pages</li>
+                            <li>• Contact forms</li>
+                            <li>• SEO optimized</li>
+                            <li>• 2 revisions included</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Landing Page Design */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Landing Page</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 800</div>
+                            <p className="text-gray-400 text-sm">single page</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• High-converting design</li>
+                            <li>• Mobile optimized</li>
+                            <li>• Call-to-action focused</li>
+                            <li>• Fast loading</li>
+                            <li>• Analytics setup</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Content Strategy */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Content Strategy</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 600</div>
+                            <p className="text-gray-400 text-sm">per funnel</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Sales funnel design</li>
+                            <li>• Content planning</li>
+                            <li>• Email sequences</li>
+                            <li>• Lead magnets</li>
+                            <li>• Strategy document</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* AI Agent Build */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">AI Agent Build</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 2,000</div>
+                            <p className="text-gray-400 text-sm">custom agent</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Custom AI chatbot</li>
+                            <li>• Business-specific training</li>
+                            <li>• Integration setup</li>
+                            <li>• Documentation</li>
+                            <li>• 1 month support</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Facebook/Google Ads */}
+                      <Card className="bg-gray-700/30 border-gray-600 hover:bg-gray-700/50 transition-colors">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <div className="w-12 h-12 bg-yellow-500/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+                              <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                              </svg>
+                            </div>
+                            <h3 className="text-xl font-semibold text-white mb-2">Facebook/Google Ads</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 500</div>
+                            <p className="text-gray-400 text-sm">per month</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Campaign setup</li>
+                            <li>• Ad optimization</li>
+                            <li>• Performance monitoring</li>
+                            <li>• Monthly reports</li>
+                            <li>• Strategy adjustments</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+
+                      {/* Package Deals */}
+                      <Card className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border-yellow-500/30 hover:from-yellow-500/30 hover:to-orange-500/30 transition-all">
+                        <CardContent className="p-6">
+                          <div className="text-center mb-4">
+                            <Badge className="bg-yellow-500 text-black font-bold mb-3">BEST VALUE</Badge>
+                            <h3 className="text-xl font-semibold text-white mb-2">Business Package</h3>
+                            <div className="text-3xl font-bold text-yellow-500 mb-1">RM 3,500</div>
+                            <p className="text-gray-400 text-sm">complete solution</p>
+                          </div>
+                          <ul className="space-y-2 text-gray-300 text-sm">
+                            <li>• Website + Landing page</li>
+                            <li>• 10 Social media designs</li>
+                            <li>• Content strategy</li>
+                            <li>• 3 months ad management</li>
+                            <li>• Priority support</li>
+                          </ul>
+                        </CardContent>
+                      </Card>
+                    </div>
+
+                    <div className="mt-12 text-center">
+                      <h3 className="text-2xl font-bold text-white mb-4">Why Choose My Services?</h3>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg className="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                          </div>
+                          <h4 className="text-lg font-semibold text-white mb-2">Affordable Pricing</h4>
+                          <p className="text-gray-300 text-sm">Competitive rates designed for Malaysian SMEs and startups</p>
+                        </div>
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg className="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                          </div>
+                          <h4 className="text-lg font-semibold text-white mb-2">Quick Turnaround</h4>
+                          <p className="text-gray-300 text-sm">Fast delivery without compromising on quality</p>
+                        </div>
+                        <div className="text-center">
+                          <div className="w-16 h-16 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg className="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                          </div>
+                          <h4 className="text-lg font-semibold text-white mb-2">Personal Support</h4>
+                          <p className="text-gray-300 text-sm">Direct communication and dedicated support throughout the project</p>
+                        </div>
+                      </div>
+
+                      <div className="mt-8 p-6 bg-gray-700/30 rounded-lg border border-gray-600">
+                        <h4 className="text-lg font-semibold text-white mb-3">Get Started Today</h4>
+                        <p className="text-gray-300 text-sm mb-4">
+                          Ready to elevate your business with professional design and development? Contact me for a free consultation!
+                        </p>
+                        <Button 
+                          className="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-3"
+                          onClick={() => setActiveTab("contact")}
+                        >
+                          Contact for Quote
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 )}
@@ -1333,6 +1598,172 @@ export default function Portfolio() {
               </div>
             )}
 
+            {activeTab === "pricing" && (
+              <div>
+                <h2 className="text-2xl font-bold text-white mb-4">
+                  Pricing & Services
+                  <div className="w-12 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 mt-2"></div>
+                </h2>
+
+                <p className="text-gray-300 text-sm mb-6">
+                  Affordable design and development services for Malaysian businesses
+                </p>
+
+                <div className="space-y-4">
+                  {/* Mobile Pricing Cards */}
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Printing Design</h3>
+                          <p className="text-gray-400 text-sm">Business cards, brochures, menus</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 150</div>
+                          <p className="text-gray-400 text-xs">per design</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Packaging Design</h3>
+                          <p className="text-gray-400 text-sm">Product packaging, labels, boxes</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 300</div>
+                          <p className="text-gray-400 text-xs">per package</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Social Media Ads</h3>
+                          <p className="text-gray-400 text-sm">Facebook/Instagram ads, stories</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 80</div>
+                          <p className="text-gray-400 text-xs">per design</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Website Design</h3>
+                          <p className="text-gray-400 text-sm">Responsive, up to 5 pages</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 1,500</div>
+                          <p className="text-gray-400 text-xs">complete site</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Landing Page</h3>
+                          <p className="text-gray-400 text-sm">High-converting single page</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 800</div>
+                          <p className="text-gray-400 text-xs">single page</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Content Strategy</h3>
+                          <p className="text-gray-400 text-sm">Sales funnels, email sequences</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 600</div>
+                          <p className="text-gray-400 text-xs">per funnel</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">AI Agent Build</h3>
+                          <p className="text-gray-400 text-sm">Custom chatbot development</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 2,000</div>
+                          <p className="text-gray-400 text-xs">custom agent</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-gray-700/30 border-gray-600">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Ads Management</h3>
+                          <p className="text-gray-400 text-sm">Facebook/Google ads setup</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 500</div>
+                          <p className="text-gray-400 text-xs">per month</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  {/* Best Value Package */}
+                  <Card className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border-yellow-500/30">
+                    <CardContent className="p-4">
+                      <Badge className="bg-yellow-500 text-black font-bold text-xs mb-2">BEST VALUE</Badge>
+                      <div className="flex justify-between items-start mb-3">
+                        <div>
+                          <h3 className="text-lg font-semibold text-white">Business Package</h3>
+                          <p className="text-gray-400 text-sm">Complete business solution</p>
+                        </div>
+                        <div className="text-right">
+                          <div className="text-xl font-bold text-yellow-500">RM 3,500</div>
+                          <p className="text-gray-400 text-xs">full package</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <div className="mt-6 p-4 bg-gray-700/30 rounded-lg border border-gray-600 text-center">
+                  <h4 className="text-lg font-semibold text-white mb-2">Get Started Today</h4>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Contact me for a free consultation and custom quote!
+                  </p>
+                  <Button 
+                    className="bg-yellow-600 hover:bg-yellow-700 text-white w-full"
+                    onClick={() => setActiveTab("contact")}
+                  >
+                    Contact for Quote
+                  </Button>
+                </div>
+              </div>
+            )}
+
             {activeTab === "contact" && (
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
@@ -1439,6 +1870,7 @@ export default function Portfolio() {
                 { key: "resume", label: "Resume" },
                 { key: "experience", label: "Experience" },
                 { key: "portfolio", label: "Portfolio" },
+                { key: "pricing", label: "Pricing" },
                 { key: "contact", label: "Contact" },
                 { key: "goals", label: "Goals" },
               ].map((tab) => (
