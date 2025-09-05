@@ -368,7 +368,7 @@ export default function Portfolio() {
                   </Avatar>
                   <h1 className="text-2xl font-bold text-white mb-2">Jay Hew</h1>
                   <Badge variant="secondary" className="bg-gray-700 text-gray-300 hover:bg-gray-600">
-                    Graphic Designer & Developer
+                    Digital Marketing Specialist
                   </Badge>
                 </div>
 
@@ -1292,7 +1292,7 @@ export default function Portfolio() {
                 </Avatar>
                 <div>
                   <h1 className="text-xl font-bold text-white">Jay Hew</h1>
-                  <p className="text-gray-300 text-sm">Graphic Designer & Developer</p>
+                  <p className="text-gray-300 text-sm">Digital Marketing Specialist</p>
                 </div>
               </div>
               <Button
