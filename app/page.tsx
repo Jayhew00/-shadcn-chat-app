@@ -756,7 +756,7 @@ export default function Portfolio() {
 
                     {/* Website Links Section */}
                     <div className="mb-8">
-                      <h3 className="text-2xl font-bold text-white mb-4">Websites I've Built</h3>
+                      <h3 className="text-2xl font-bold text-white mb-4">Websites I&apos;ve Built</h3>
                       <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
                         {displayedWebsites.map((site) => (
                           <li key={site} className="">
@@ -1255,7 +1255,7 @@ export default function Portfolio() {
 
                 {/* Mobile Website Links Section */}
                 <div className="mb-6">
-                  <h3 className="text-lg font-bold text-white mb-3">Websites I've Built</h3>
+                  <h3 className="text-lg font-bold text-white mb-3">Websites I&apos;ve Built</h3>
                   <div className="grid grid-cols-1 gap-2">
                     {displayedWebsites.map((site) => (
                       <a
