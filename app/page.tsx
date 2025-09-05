@@ -1623,6 +1623,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">per design</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Business cards</li>
+                        <li>• Brochures & flyers</li>
+                        <li>• Menu designs</li>
+                        <li>• Banners & posters</li>
+                        <li>• 2 revisions included</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1638,6 +1645,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">per package</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Product packaging</li>
+                        <li>• Label design</li>
+                        <li>• Box design</li>
+                        <li>• 3D mockups</li>
+                        <li>• 3 revisions included</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1653,6 +1667,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">per design</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Facebook/Instagram ads</li>
+                        <li>• Story designs</li>
+                        <li>• Carousel ads</li>
+                        <li>• Multiple sizes</li>
+                        <li>• 1 revision included</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1668,6 +1689,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">complete site</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Responsive design</li>
+                        <li>• Up to 5 pages</li>
+                        <li>• Contact forms</li>
+                        <li>• SEO optimized</li>
+                        <li>• 2 revisions included</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1683,6 +1711,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">single page</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• High-converting design</li>
+                        <li>• Mobile optimized</li>
+                        <li>• Call-to-action focused</li>
+                        <li>• Fast loading</li>
+                        <li>• Analytics setup</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1698,6 +1733,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">per funnel</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Sales funnel design</li>
+                        <li>• Content planning</li>
+                        <li>• Email sequences</li>
+                        <li>• Lead magnets</li>
+                        <li>• Strategy document</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1713,6 +1755,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">custom agent</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Custom AI chatbot</li>
+                        <li>• Business-specific training</li>
+                        <li>• Integration setup</li>
+                        <li>• Documentation</li>
+                        <li>• 1 month support</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1728,6 +1777,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">per month</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Campaign setup</li>
+                        <li>• Ad optimization</li>
+                        <li>• Performance monitoring</li>
+                        <li>• Monthly reports</li>
+                        <li>• Strategy adjustments</li>
+                      </ul>
                     </CardContent>
                   </Card>
 
@@ -1745,6 +1801,13 @@ export default function Portfolio() {
                           <p className="text-gray-400 text-xs">full package</p>
                         </div>
                       </div>
+                      <ul className="space-y-1 text-gray-300 text-sm">
+                        <li>• Website + Landing page</li>
+                        <li>• 10 Social media designs</li>
+                        <li>• Content strategy</li>
+                        <li>• 3 months ad management</li>
+                        <li>• Priority support</li>
+                      </ul>
                     </CardContent>
                   </Card>
                 </div>
