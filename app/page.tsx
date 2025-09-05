@@ -472,11 +472,11 @@ export default function Portfolio() {
               <CardContent className="p-6 lg:p-8">
                 {/* Desktop Navigation */}
                 <nav className="mb-8 overflow-x-auto">
-                  <ul className="flex gap-8 text-sm whitespace-nowrap pb-2">
+                  <ul className="flex gap-6 lg:gap-8 text-sm lg:text-base whitespace-nowrap pb-2">
                     {[
                       { key: "about", label: "About" },
                       { key: "resume", label: "Resume" },
-                      { key: "experience", label: "Working Experience" },
+                      { key: "experience", label: "Experience" },
                       { key: "portfolio", label: "Portfolio" },
                       { key: "pricing", label: "Pricing" },
                       { key: "contact", label: "Contact" },
@@ -485,7 +485,7 @@ export default function Portfolio() {
                       <li key={tab.key}>
                         <button
                           onClick={() => setActiveTab(tab.key)}
-                          className={`font-medium pb-2 transition-colors relative ${
+                          className={`font-medium pb-3 px-2 transition-colors relative ${
                             activeTab === tab.key ? "text-yellow-500" : "text-gray-400 hover:text-white"
                           }`}
                         >
@@ -1863,22 +1863,40 @@ export default function Portfolio() {
 
         {/* Mobile Bottom Navigation */}
         <Card className="bg-gray-800/50 border-gray-700 backdrop-blur-sm sticky bottom-4">
-          <CardContent className="p-4">
-            <div className="flex justify-around text-xs">
+          <CardContent className="p-3">
+            <div className="grid grid-cols-4 gap-1 text-xs">
               {[
                 { key: "about", label: "About" },
-                { key: "resume", label: "Resume" },
-                { key: "experience", label: "Experience" },
-                { key: "portfolio", label: "Portfolio" },
+                { key: "resume", label: "Skills" },
+                { key: "portfolio", label: "Work" },
                 { key: "pricing", label: "Pricing" },
+              ].map((tab) => (
+                <button
+                  key={tab.key}
+                  onClick={() => setActiveTab(tab.key)}
+                  className={`p-2 rounded-lg font-medium transition-colors text-center ${
+                    activeTab === tab.key
+                      ? "bg-yellow-500 text-black"
+                      : "text-gray-400 hover:text-white hover:bg-gray-700/50"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+            <div className="grid grid-cols-3 gap-1 text-xs mt-2">
+              {[
+                { key: "experience", label: "Experience" },
                 { key: "contact", label: "Contact" },
                 { key: "goals", label: "Goals" },
               ].map((tab) => (
                 <button
                   key={tab.key}
                   onClick={() => setActiveTab(tab.key)}
-                  className={`font-medium transition-colors ${
-                    activeTab === tab.key ? "text-yellow-500" : "text-gray-400"
+                  className={`p-2 rounded-lg font-medium transition-colors text-center ${
+                    activeTab === tab.key
+                      ? "bg-yellow-500 text-black"
+                      : "text-gray-400 hover:text-white hover:bg-gray-700/50"
                   }`}
                 >
                   {tab.label}
